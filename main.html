@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="clearButton">
+        <button onclick="clearSudoku()">Clear</button>
+        <button onclick="fillSudoku()">fill Sudoku</button>
+    </div>
+    <div class="sudoku-grid">
+        <table>
+            <tbody>
+            <!-- Generate the Sudoku grid dynamically using JavaScript -->
+            </tbody>
+        </table>
+        <button onclick="processInput()">Submit</button>
+        <p id="result"></p>
+    </div>
+    <div class="generateButtons">
+        <button onclick="generateEasySudoku()">Generate Easy Sudoku</button>
+        <button onclick="generateMediumSudoku()">Generate Medium Sudoku</button>
+        <button onclick="generateHardSudoku()">Generate Hard Sudoku</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
